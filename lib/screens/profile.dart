@@ -1,6 +1,5 @@
 import 'package:chatmate/constants.dart';
 import 'package:chatmate/screens/people.dart';
-import 'package:chatmate/screens/settings.dart';
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -11,7 +10,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:image_picker/image_picker.dart';
 import 'dart:io';
 import 'blocked_users.dart';
-import 'welcome_screen.dart';
 import 'friend_requests.dart';
 import 'my_friends.dart';
 

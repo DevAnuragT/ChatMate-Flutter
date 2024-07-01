@@ -1,6 +1,5 @@
 import 'package:chatmate/screens/login_screen.dart';
 import 'package:chatmate/screens/registration_screen.dart';
-import 'package:chatmate/screens/settings.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:chatmate/screens/welcome_screen.dart';

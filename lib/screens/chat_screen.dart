@@ -1,5 +1,4 @@
 import 'dart:io';
-import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:chatmate/constants.dart';
@@ -10,7 +9,6 @@ import 'package:permission_handler/permission_handler.dart';
 import 'friend_profile.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:flutter_sound/flutter_sound.dart';
-import 'package:voice_message_package/voice_message_package.dart';
 import 'settings.dart';
 
 class ChatScreen extends StatefulWidget {
@@ -33,7 +31,6 @@ class ChatScreen extends StatefulWidget {
 class _ChatScreenState extends State<ChatScreen> {
   FlutterSoundRecorder? _recorder;
   bool _isRecording = false;
-  String? _recordingFilePath;
   final _auth = FirebaseAuth.instance;
   final _firestore = FirebaseFirestore.instance;
   late User loggedIn;
@@ -719,7 +716,7 @@ class MessagesStream extends StatelessWidget {
             time: messageTime != null
                 ? (messageTime as Timestamp).toDate()
                 : null,
-            isSeen: message['seen'] == 'true',
+            isSeen: isSeen,
             type: messageType,
             messageId: messageId,
             image: messageType == 'image' ? content : null,

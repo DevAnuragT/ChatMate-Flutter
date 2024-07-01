@@ -1,22 +1,13 @@
 import 'package:chatmate/screens/my_friends.dart';
 import 'package:chatmate/screens/people.dart';
 import 'package:chatmate/screens/profile.dart';
-import 'package:chatmate/screens/settings.dart';
-import 'package:chatmate/screens/welcome_screen.dart';
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class FriendRequestScreen extends StatefulWidget {
   static const String id = 'friend_request_screen';
-  static List<String> _screens = [
-    ProfileScreen.id,
-    PeopleScreen.id,
-    FriendsScreen.id,
-    FriendRequestScreen.id,
-  ];
 
   @override
   _FriendRequestScreenState createState() => _FriendRequestScreenState();
