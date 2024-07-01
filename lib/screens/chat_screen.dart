@@ -31,6 +31,7 @@ class ChatScreen extends StatefulWidget {
 class _ChatScreenState extends State<ChatScreen> {
   FlutterSoundRecorder? _recorder;
   bool _isRecording = false;
+  String? _recordingFilePath;
   final _auth = FirebaseAuth.instance;
   final _firestore = FirebaseFirestore.instance;
   late User loggedIn;
