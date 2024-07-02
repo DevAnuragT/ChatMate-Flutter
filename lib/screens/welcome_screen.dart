@@ -110,7 +110,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
         'profilePicUrl': '', // Set your default profile pic URL
         'chattingWith': '',
         'blockedUsers': [],
-        'status': 'online',
+        'status': 'offline',
       });
     }
   }

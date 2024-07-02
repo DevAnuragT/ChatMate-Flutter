@@ -128,7 +128,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
         'profilePicUrl': '', // Set your default profile pic URL
         'chattingWith': '',
         'blockedUsers': [],
-        'status': 'online',
+        'status': 'offline',
       });
     }
   }
